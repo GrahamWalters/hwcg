@@ -14,7 +14,7 @@ paginate_path: "blog/page/:num"
 # Build settings
 markdown: kramdown
 
-exclude: ["README.md", "_site"]
+exclude: ["README.md", "_site", "CNAME"]
 
 
 defaults:

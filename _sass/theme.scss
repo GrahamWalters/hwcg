@@ -236,7 +236,7 @@ a.contact-button {
 }
 
 #footer {
-  background: #575a5d;
+  background: $brand-gray;
   color: #fff;
   margin-top: 30px;
   padding: 20px;
@@ -272,7 +272,7 @@ a.contact-button {
 
 // Post Meta (date)
 p.post-meta {
-  color: #575a5d;
+  color: $brand-gray;
   top: -4px;
   position: relative;
   font-style: italic;
