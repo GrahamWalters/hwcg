@@ -1,0 +1,39 @@
+---
+layout: default
+title: Blog
+tabTitle: Blog
+weight: 20
+---
+<div class="posts">
+    {% for post in paginator.posts %}
+        <article class="clearfix">
+            <header class="entry-header">
+                <h2 class="h3 entry-title">
+                    <a href="{{ post.url }}">{{ post.title }}</a>
+                </h2>
+                <p class="post-meta">Posted on {{ post.date | date: "%b %-d, %Y" }}</p>
+            </header>
+
+            <div class="entry-content">
+                <img class="pull-left post-thumbnail" src="{{ post.image.src }}" alt="{{ post.image.alt }}">
+                {{ post.content | strip_html | truncatewords: 100 }}
+            </div>
+        </article>
+    {% endfor %}
+</div>
+
+
+<!-- Pager links -->
+<ul class="pager">
+{% if paginator.next_page %}
+    <li class="previous"><a href="{{ paginator.next_page_path | prepend: site.baseurl | append: '/' | replace: 'index.html' | replace: '//', '/' }}">&larr; Older</a></li>
+{% else %}
+    <li class="previous disabled"><a href="#">&larr; Older</a></li>
+{% endif %}
+
+{% if paginator.previous_page %}
+    <li class="next"><a href="{{ paginator.previous_page_path | prepend: site.baseurl | append: '/' | replace: 'index.html' | replace: '//', '/' }}">Newer &rarr;</a></li>
+{% else %}
+    <li class="next disabled"><a href="#">Newer &rarr;</a></li>
+{% endif %}
+</ul>

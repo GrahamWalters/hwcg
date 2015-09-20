@@ -1,0 +1,61 @@
+{% assign pages = site.pages | sort:"weight"  %}
+
+<div class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-lg-11 col-lg-offset-0-5">
+                
+                <a href="/" class="h1 site-title">
+                    <img src="https://www.homewatchcaregivers.com/resources-local/img/logo@2x.png" alt="{{ site.title }}" style="width: 180px;">
+                </a>
+
+                <div class="site-details text-right">
+                    <a href="tel:+1-410-715-9175" class="contact-button" title="Call 410 715 9175">
+                        <span class="fa fa-phone"></span><span class="hidden-xs">(410) 715-9175</span>
+                    </a>
+                    <a href="/contact-us/" class="contact-button" title="Contact Us">
+                        <span class="fa fa-envelope"></span><span class="hidden-xs">Contact Us</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-header" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-header">
+            <ul class="nav navbar-nav">
+                <li {% if page.url == '/' %}class="active"{% endif %} >
+                    <a title="Home" href="/">Home</a>
+                </li>
+                <!--  or page.is_post -->
+                <li {% if page.url contains '/blog/' %}class="active"{% endif %} >
+                    <a href="/blog/">Blog</a>
+                </li>
+                <li {% if page.url == '/dementia-alzheimers-care/' %}class="active"{% endif %} >
+                    <a title="Dementia Care" href="/dementia-alzheimers-care/">Dementia Care</a>
+                </li>
+                <li {% if page.url == '/chronic-care/' %}class="active"{% endif %} >
+                    <a title="Chronic Care" href="/chronic-care/">Chronic Care</a>
+                </li>
+                <li {% if page.url == '/special-needs-care/' %}class="active"{% endif %} >
+                    <a title="Special Needs Care" href="/special-needs-care/">Special Needs</a>
+                </li>
+                <li {% if page.url == '/respite-and-after-care/' %}class="active"{% endif %} >
+                    <a title="Respite &amp; After Care" href="/respite-and-after-care/">Respite &amp; After</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</nav>
