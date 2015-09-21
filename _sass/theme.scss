@@ -176,11 +176,7 @@ a.contact-button {
 .card {
   border-radius: 3px; 
   border: 1px solid #e9e9e9;
-  margin-bottom:30px;
-
-  & a {
-    color: $brand-primary;
-  }
+  margin-bottom: 30px;
 
   & > .card-title {
     padding: 18px;
@@ -230,6 +226,28 @@ a.contact-button {
 
 
 
+/********************
+ * 
+ ** Twitter Follow Button
+ * 
+ ********************/
+
+.twitter-btn {
+  background-image: -webkit-linear-gradient(#fff,#dedede);
+  background-image: linear-gradient(#fff,#dedede);
+  font-weight: bold;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+
+  &:hover {
+    background-image: -webkit-linear-gradient(#f8f8f8,#d9d9d9);
+    background-image: linear-gradient(#f8f8f8,#d9d9d9);
+    box-shadow: none;
+  }
+
+  & > .fa {
+    color: #55acee;
+  }
+}
 
 .sidebar {
   margin-top: 30px;
@@ -259,6 +277,10 @@ a.contact-button {
 
 
 
+// Blue links
+a.blue-link {
+  color: $brand-primary;
+}
 
 // index.html posts list
 .posts > article {

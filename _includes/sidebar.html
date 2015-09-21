@@ -5,12 +5,12 @@
         </div>
         <div class="card-body">
             <ul>
-                <li><a href="/about-us/">About Us</a></li>
-                <li><a href="/about-us/#CEO-Story">Kathryn Parks, CEO – Story</a></li>
-                <li><a href="/#Our-Services">Our Services</a></li>
-                <li><a href="/testimonials/">Testimonials</a></li>
-                <li><a href="/#Schedule-Consultation">Schedule A Free Consultation</a></li>
-                <li><a href="/job-application/">Job Application</a></li>
+                <li><a class="blue-link" href="/about-us/">About Us</a></li>
+                <li><a class="blue-link" href="/about-us/#CEO-Story">Kathryn Parks, CEO – Story</a></li>
+                <li><a class="blue-link" href="/#Our-Services">Our Services</a></li>
+                <li><a class="blue-link" href="/testimonials/">Testimonials</a></li>
+                <li><a class="blue-link" href="/#Schedule-Consultation">Schedule A Free Consultation</a></li>
+                <li><a class="blue-link" href="/job-application/">Job Application</a></li>
             </ul>
         </div>
     </div>
@@ -38,10 +38,9 @@
             </div>
         </div>
         <div class="card-body">
-            <a href="{{ site.social.twitter }}" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @HomecareHoward</a>
-            <script>
-            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-            </script>
+            <a class="btn btn-sm btn-default twitter-btn" title="Follow @HomecareHoward on Twitter" target="_blank" href="https://twitter.com/intent/follow?original_referer={{ site.url | append: page.url | URLEncode }}&amp;region=follow_link&amp;screen_name=HomecareHoward&amp;tw_p=followbutton">
+                <span class="fa fa-lg fa-twitter"></span> Follow @HomecareHoward
+            </a>
         </div>
     </div>
 </div>
@@ -54,7 +53,7 @@
         <div class="card-body">
             <div itemprop="address" itemscope="" itemtype="http://data-vocabulary.org/Address" class="profileInfoContainer addressLink">
                 
-                <a href="/contact-us/#map" title="View map">
+                <a href="/contact-us/#map" class="blue-link" title="View map">
                     <span class="fa fa-map-marker fa-3x pull-left" style="color: #dd5d2e;"></span>
 
                     <div style="line-height: 1.25;">
