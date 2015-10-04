@@ -2,8 +2,8 @@
 title: Family Caregivers Of Maryland
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-  Striving to preserve dignity, protect independence, 
-  and provide peace of mind for our clients and loved ones 
+  Striving to preserve dignity, protect independence,
+  and provide peace of mind for our clients and loved ones
   by providing exceptional home care services.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://wip.familycaregiversofmaryland.com"
@@ -32,3 +32,6 @@ social:
     facebook: "https://www.facebook.com/HomecareHowardCounty"
     twitter:  "http://twitter.com/HomecareHoward"
     google:   "https://plus.google.com/b/116907209544857059326/"
+
+gems:
+    - jekyll-feed
