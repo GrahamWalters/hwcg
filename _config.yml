@@ -33,5 +33,8 @@ social:
     twitter:  "http://twitter.com/HomecareHoward"
     google:   "https://plus.google.com/b/116907209544857059326/"
 
+twitter_username: HomecareHoward
+
 gems:
     - jekyll-feed
+    - jekyll-sitemap

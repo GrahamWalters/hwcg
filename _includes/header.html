@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-lg-11 col-lg-offset-0-5">
-                
+
                 <a href="/" class="h1 site-title">
                     <img src="/img/logo.png" alt="{{ site.title }}" style="width: 180px;">
                 </a>
@@ -38,9 +38,12 @@
                 <li {% if page.url == '/' %}class="active"{% endif %} >
                     <a title="Home" href="/">Home</a>
                 </li>
+                <li class="visible-xs-block {% if page.url == '/about-us/' %}active {% endif %}" >
+                    <a title="About Us" href="/about-us/">About Us</a>
+                </li>
                 <!--  or page.is_post -->
                 <li {% if page.url contains '/blog/' %}class="active"{% endif %} >
-                    <a href="/blog/">Blog</a>
+                    <a title="Blog" href="/blog/">Blog</a>
                 </li>
                 <li {% if page.url == '/dementia-alzheimers-care/' %}class="active"{% endif %} >
                     <a title="Dementia Care" href="/dementia-alzheimers-care/">Dementia Care</a>

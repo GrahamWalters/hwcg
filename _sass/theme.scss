@@ -1,6 +1,6 @@
 /* Stop textareas expanding horizontally */
 textarea {
-  max-width: 100%; 
+  max-width: 100%;
 }
 
 .form-horizontal .has-feedback .form-control-feedback {
@@ -8,9 +8,9 @@ textarea {
 }
 
 /********************
- * 
+ *
  ** Header
- * 
+ *
  ********************/
 
 .header {
@@ -57,15 +57,15 @@ textarea {
 
 
 /********************
- * 
+ *
  ** Contact Button
- * 
+ *
  ********************/
 
 a.contact-button {
   display: block;
   position: relative;
-  
+
   min-width: 40px;
   height: 40px;
   font-size: 18px;
@@ -83,12 +83,12 @@ a.contact-button {
   & .fa {
     background: $brand-orange;
     color: #fff;
-    
+
     font-size: 24px;
     line-height: 40px;
     text-align: center;
     border-radius: 50%;
-    
+
     position: absolute;
     top: -1px;
     left: -2px;
@@ -126,9 +126,9 @@ a.contact-button {
 
 
 /********************
- * 
+ *
  ** Nav
- * 
+ *
  ********************/
 
 .navbar.navbar-default {
@@ -168,13 +168,13 @@ a.contact-button {
 
 
 /********************
- * 
+ *
  ** Sidebar Cards
- * 
+ *
  ********************/
 
 .card {
-  border-radius: 3px; 
+  border-radius: 3px;
   border: 1px solid #e9e9e9;
   margin-bottom: 30px;
 
@@ -196,11 +196,11 @@ a.contact-button {
     & > .social ul{
       margin: 0;
       padding: 0;
-      list-style-type: none;    
+      list-style-type: none;
     }
 
     & > .social ul li{
-      float:left; 
+      float:left;
     }
 
     & > .social ul li a{
@@ -227,9 +227,9 @@ a.contact-button {
 
 
 /********************
- * 
+ *
  ** Twitter Follow Button
- * 
+ *
  ********************/
 
 .twitter-btn {
@@ -316,4 +316,51 @@ p.post-meta {
   margin: 0 10px 0 0;
   max-width: 250px;
   max-height: 250px;
+}
+
+// Post footer
+.post-footer {
+  margin-top: 10px;
+  padding: 20px 0;
+}
+
+/********************
+ *
+ ** Post Share Buttons
+ *
+ ********************/
+
+.post-share {
+  font-size: 1.1em;
+  color: #777;
+
+  & .share-label {
+    padding-right: .9em;
+  }
+
+  & .share-link {
+    font-size: 1.3em;
+    margin-left: .2em;
+    margin-right: .2em;
+    color: #777;
+  }
+}
+
+
+$brand-facebook:    #3B5998;
+$brand-youtube:     #CD201F;
+$brand-instagram:   #3F729B;
+$brand-twitter:     #55acee;
+$brand-google-plus: #dd4b39;
+
+.share-links {
+  & > .facebook:hover {
+    color: $brand-facebook;
+  }
+  & > .twitter:hover {
+    color: $brand-twitter;
+  }
+  & > .google-plus:hover {
+    color: $brand-google-plus;
+  }
 }
