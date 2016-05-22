@@ -6,7 +6,7 @@ description: > # this means to ignore newlines until "baseurl:"
   and provide peace of mind for our clients and loved ones
   by providing exceptional home care services.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://wip.familycaregiversofmaryland.com"
+url: "https://hwcg.grahamwalters.me"
 permalink:      "/:title/"
 paginate:       5
 paginate_path: "blog/page/:num"
@@ -18,23 +18,24 @@ exclude: ["README.md", "_site", "CNAME"]
 
 
 defaults:
-    - scope:
-        path: ""      # empty string for all files
-        type: posts   # limit to posts
-      values:
-        is_post: true # automatically set is_post=true for all posts
+  - scope:
+      path: ""      # empty string for all files
+      type: posts   # limit to posts
+    values:
+      is_post: true # automatically set is_post=true for all posts
 
 sass:
-    style: compressed
+  style: compressed
 
 social:
-    linkedin: "http://www.linkedin.com/company/homewatch-caregivers-howard-county"
-    facebook: "https://www.facebook.com/HomecareHowardCounty"
-    twitter:  "http://twitter.com/HomecareHoward"
-    google:   "https://plus.google.com/b/116907209544857059326/"
+  linkedin: "http://www.linkedin.com/company/homewatch-caregivers-howard-county"
+  facebook: "https://www.facebook.com/HomecareHowardCounty"
+  twitter:  "http://twitter.com/HomecareHoward"
+  google:   "https://plus.google.com/b/116907209544857059326/"
 
 twitter_username: HomecareHoward
 
 gems:
-    - jekyll-feed
-    - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-sitemap
