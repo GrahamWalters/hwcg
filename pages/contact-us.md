@@ -4,7 +4,7 @@ title: Contact Us
 permalink: /contact-us/
 ---
 
-##Map
+## Map
 <div id="map-surface" class="pull-right" style="height:400px; width:100%; position:static; margin-bottom: 20px;"></div>
 
 <script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=false"></script>
